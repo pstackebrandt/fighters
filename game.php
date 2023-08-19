@@ -8,9 +8,6 @@ if (isset($_POST['btnStart'])) {
     # var_dump($_POST);
     $p1 = new Player($_POST['p1_name']);
     $p2 = new Player($_POST['p2_name']);
-    var_dump($p1);
-    echo '<br>';
-    var_dump($p2);
 }
 
 ?>
@@ -25,6 +22,16 @@ if (isset($_POST['btnStart'])) {
 </head>
 
 <body>
+    <h1><?php echo $p1->name ?></h1>
+    Gesundheit: <?php echo $p1->getHealth(); ?>
+    <br>
+    Stärke: <?php echo $p1->getStrength(); ?>
+
+
+    <h1><?php echo $p2->name ?></h1>
+    Gesundheit; <?php echo $p2->getHealth(); ?>
+    <br>
+    Stärke: <?php echo $p2->getStrength(); ?>
 
 </body>
 

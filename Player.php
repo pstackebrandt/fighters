@@ -10,7 +10,15 @@ class Player {
       $this->name = $name;
    }
 
+   function getHealth()
+   {
+      return $this->health;
+   }
 
+   function getStrength()
+   {
+      return $this->strength;
+   }
 }
 
 ?>
