@@ -2,8 +2,15 @@
 
 declare(strict_types=1);
 
+require_once 'Player.php';
+
 if (isset($_POST['btnStart'])) {
-    var_dump($_POST);
+    # var_dump($_POST);
+    $p1 = new Player($_POST['p1_name']);
+    $p2 = new Player($_POST['p2_name']);
+    var_dump($p1);
+    echo '<br>';
+    var_dump($p2);
 }
 
 ?>
