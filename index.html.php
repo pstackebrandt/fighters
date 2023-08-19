@@ -17,6 +17,7 @@ declare(strict_types=1); ?>
    <?php $test = 'test';
    echo "<h1>Test</h1>\n";
    echo "<p>\$test = $test;</p>\n";
+   
    ?>
 
 </body>
