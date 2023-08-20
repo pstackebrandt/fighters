@@ -19,6 +19,14 @@ function getTagName(string $tag): string
 }
 
 /**
+ * Prints a line break.
+ */
+function printBR()
+{
+   printWithTag('', 'br');
+}
+
+/**
  * Prints a tag that surrounds the given text.
  * example: lorem ipsum -> <p>lorem ipsum</p>
  * @param string $formattedText The text to print.
