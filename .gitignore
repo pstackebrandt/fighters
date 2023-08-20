@@ -1,3 +1,8 @@
+<<<<<<< HEAD
  # Player data created during the game.
 player_1.txt
 player_2.txt
+=======
+player_1.txt // Contains player data created during the game.
+player_2.txt // Contains player data created during the game.
+>>>>>>> b2fef159e30bc379b8bbc19cbbda848bda929622
