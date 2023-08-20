@@ -27,11 +27,18 @@ if (isset($_POST['btnStart'])) {
     <br>
     Stärke: <?php echo $p1->getStrength(); ?>
 
+    <form action="game.php" method="post">
+        <input type="submit" name="p1_attack" value="Angriff">
+    </form>
 
     <h1><?php echo $p2->name ?></h1>
     Gesundheit; <?php echo $p2->getHealth(); ?>
     <br>
     Stärke: <?php echo $p2->getStrength(); ?>
+
+    <form action="game.php" method="post">
+        <input type="submit" name="p2_attack" value="Angriff">
+    </form>
 
 </body>
 
