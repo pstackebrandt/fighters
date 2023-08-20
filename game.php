@@ -4,10 +4,18 @@ declare(strict_types=1);
 
 require_once 'Player.php';
 
+$info = '';
+
 if (isset($_POST['btnStart'])) {
     # var_dump($_POST);
     $p1 = new Player($_POST['p1_name']);
     $p2 = new Player($_POST['p2_name']);
+} elseif (isset($_POST['p1_attack'])) {
+    $info .= "$p1->name greift $p2-name an.";
+} elseif (isset($_POST['p2_attack'])) {
+    $info .= "$p2->name greift $p1-name an.";
+} else {
+    echo 'No change found. Error?';
 }
 
 ?>
